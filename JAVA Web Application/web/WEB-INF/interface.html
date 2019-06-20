@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Library Management System</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body style="font-family: 'FranchiseRegular','Arial Narrow',Arial,sans-serif;">
+        <div id="wrapper">
+        <h1>Book Rental Service</h1>
+        <h2>Select Genre to get Books</h2>   
+        <div id="genres">
+            <form action="genre" method="post"> 
+                
+                <input type="radio" name="genre" value="thriller" style="width:2em; height:2em; margin-bottom: 15px; margin-right: 10px;" checked><span style="font-size:25px;">Thriller</span><br>
+                <input type="radio" name="genre" value="comedy" style="width:2em; height:2em; margin-bottom: 15px;margin-right: 10px;"><span style="font-size:25px;">Comedy</span><br>
+                <input type="radio" name="genre" value="mystery" style="width:2em; height:2em; margin-bottom: 15px;margin-right: 10px;"><span style="font-size:25px;">Mystery</span><br>
+                <input type="radio" name="genre" value="drama" style="width:2em; height:2em; margin-bottom: 15px;margin-right: 10px;"><span style="font-size:25px;">Drama</span>        
+
+                <p class="genre button"> 
+                        <input type="submit" value="Select Genre" /> 
+                </p>
+				
+	</form>
+        </div>
+        </div>
+    </body>
+</html>

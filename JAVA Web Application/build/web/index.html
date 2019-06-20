@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>JAVA Db WebApp</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div id="wrapper">
+            <div id="register" class="animate form">
+			<form action="register" method="post"> 
+				<h1> Sign up </h1> 
+				<p> 
+					<label for="usernamesignup" class="uname">Your Name</label>
+					<input id="usernamesignup" name="usernamesignup" required="required" type="text"  />
+				</p>
+                                <p> 
+					<label for="agesignup" class="youage"> Your Age</label>
+					<input id="agesignup" name="agesignup" required="required" type="text" /> 
+				</p>
+				<p> 
+					<label for="emailsignup" class="youmail"> Your E-mail</label>
+					<input id="emailsignup" name="emailsignup" required="required" type="email" /> 
+				</p>
+				<p> 
+					<label for="passwordsignup" class="youpasswd">Your Password </label>
+					<input id="passwordsignup" name="passwordsignup" required="required" type="password"/>
+				</p>
+				<p> 
+					<label for="passwordsignup_confirm" class="youpasswd">Please confirm your password </label>
+					<input id="passwordsignup_confirm" name="passwordsignup_confirm" required="required" type="password" />
+				</p>
+				<p class="signin button"> 
+                                    <input type="submit" value="Sign up" onclick="check()"/> 
+				</p>
+	
+			</form>
+                     <p class="login button"> 
+                         <input type="button" value="Login" onclick="window.location.href='register'" />
+                    </p>
+		</div>
+        </div>
+        <script>
+            function check()
+            {
+                var x=document.getElementById("passwordsignup").value;
+                var y=document.getElementById("passwordsignup_confirm").value;
+                if(x!=y)
+                {
+                    alert("Passwords dont match\nPress back and register again");
+                    
+                }
+            }
+      
+        </script>
+    </body>
+</html>
